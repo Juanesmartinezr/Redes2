@@ -1,0 +1,128 @@
+/* Fondo general */
+body {
+    background: linear-gradient(135deg, #1d3557, #457b9d);
+    color: #f1faee;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 650px;
+    width: 100%;
+    background-color: #f1faee;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    text-align: center;
+    color: #1d3557;
+}
+
+/* Estilo del cuadro de entrada */
+.input-frame {
+    margin-bottom: 25px;
+}
+
+.input-frame h1 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #457b9d;
+}
+
+.input-frame .form-group input {
+    border: 2px solid #457b9d;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 1em;
+}
+
+/* Botón de análisis */
+.btn-primary {
+    background-color: #e63946;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #d62839;
+}
+
+/* Mensaje de error */
+.error {
+    color: #e63946;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* Contenedor de salida */
+.output {
+    background-color: #a8dadc;
+    color: #1d3557;
+    border-radius: 8px;
+    padding: 20px;
+    display: none; /* Escondido por defecto */
+}
+
+.output p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Leyenda de colores */
+.color-legend {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.legend-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.network-box, .host-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.network-box {
+    background-color: #457b9d;
+}
+
+.host-box {
+    background-color: #e63946;
+}
+
+/* Contenedores de direcciones */
+#finalOutput, #finalOutput2, #finalRow {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 15px;
+    border-top: 1px solid #e5e5e5;
+}
+
+#usableHostsCount {
+    font-size: 1.1em;
+    color: #e63946;
+    font-weight: bold;
+}
+

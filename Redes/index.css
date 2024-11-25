@@ -1,0 +1,119 @@
+/* Reset general de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body y fondo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Estilos para las secciones */
+section {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la lista de contacto */
+.contact-info {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info li {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Botón de la calculadora */
+.button {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #218838;
+}
+
+/* Añadiendo una sección para enlaces o recursos adicionales */
+.resources {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.resources a {
+    font-size: 20px;
+    color: #007BFF;
+    text-decoration: none;
+    margin: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.resources a:hover {
+    color: #0056b3;
+}
+
+/* Estilo responsive para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+    header p {
+        font-size: 16px;
+    }
+    section {
+        margin: 20px;
+        padding: 15px;
+    }
+    .button {
+        padding: 10px 20px;
+    }
+}

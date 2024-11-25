@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address Analyzer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the new CSS file -->
+</head>
+<body>
+    <div class="container">
+        <div class="input-frame text-center">
+            <h1>IP Address Analyzer</h1>
+            <div class="form-group">
+                <input type="text" class="form-control" id="ipInput" placeholder="Enter IP address with mask (e.g., 192.168.0.1/24)">
+            </div>
+            <button class="btn btn-primary btn-block" onclick="analyzeIP()">Analyze</button>
+            <div id="errorMessage" class="error"></div>
+        </div>
+
+        <div class="output mt-4" id="outputContainer">
+            <div id="output"></div>
+            <div class="mt-4 row" id="finalOutput">
+                <div class="col">
+                    <p id="networkAddress"></p>
+                    <p id="broadcastAddress"></p>
+                </div>
+                <div class="col">
+                    <p id="ipClass"></p>
+                    <p id="ipType"></p>
+                </div>
+            </div>
+            <div class="mt-4 row" id="finalOutput2">
+                <div class="col">
+                    <p id="usableHosts"></p>
+                </div>
+                <div class="col">
+                    <p id="binaryIP"></p>
+                </div>
+            </div>
+            <div class="mt-4 row align-items-center" id="finalRow">
+                <div class="col" id="usableHostsCount"></div>
+                <div class="col text-center" id="colorLegend">
+                    <div class="legend-item">
+                        <div class="network-box">N</div>
+                        <span>Network</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="host-box">H</div>
+                        <span>Host</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
