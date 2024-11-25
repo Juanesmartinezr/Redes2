@@ -1,119 +1,142 @@
-/* Reset general de estilos */
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body y fondo */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-}
-
-/* Estilo del encabezado */
-header {
-    background-color: #007BFF;
-    color: white;
-    padding: 30px 0;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 18px;
-}
-
-/* Estilos para las secciones */
-section {
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
+    background: #f0f2f5;
     color: #333;
-    font-size: 28px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #6c63ff, #3b30b6);
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+header .header-content h1 {
+    font-size: 3rem;
     margin-bottom: 10px;
 }
 
-p {
-    font-size: 18px;
+header .header-content p {
+    font-size: 1.2rem;
+}
+
+/* Navegación */
+nav {
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #6c63ff;
+}
+
+/* Secciones */
+main {
+    padding: 20px;
+}
+
+section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #3b30b6;
+}
+
+section p {
+    font-size: 1rem;
     color: #555;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-/* Estilo para la lista de contacto */
-.contact-info {
-    list-style-type: none;
-    padding: 0;
+/* Listas estilizadas */
+.skills, .hobbies {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.contact-info li {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #555;
+.skills li, .hobbies li {
+    background: #6c63ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
-/* Botón de la calculadora */
+/* Botón */
 .button {
     display: inline-block;
-    background-color: #28a745;
+    background: #3b30b6;
     color: white;
     padding: 12px 25px;
     text-decoration: none;
-    border-radius: 6px;
-    font-size: 18px;
-    text-align: center;
-    margin-top: 30px;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
 }
 
 .button:hover {
-    background-color: #218838;
+    background: #6c63ff;
 }
 
-/* Añadiendo una sección para enlaces o recursos adicionales */
-.resources {
-    margin-top: 50px;
+/* Footer */
+footer {
     text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: white;
+    margin-top: 20px;
 }
 
-.resources a {
-    font-size: 20px;
-    color: #007BFF;
-    text-decoration: none;
-    margin: 5px 10px;
-    transition: color 0.3s ease;
-}
-
-.resources a:hover {
-    color: #0056b3;
-}
-
-/* Estilo responsive para pantallas pequeñas */
+/* Responsive */
 @media screen and (max-width: 768px) {
-    header h1 {
-        font-size: 28px;
+    header .header-content h1 {
+        font-size: 2rem;
     }
-    header p {
-        font-size: 16px;
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
-    section {
-        margin: 20px;
-        padding: 15px;
-    }
-    .button {
-        padding: 10px 20px;
+
+    nav ul li {
+        margin: 10px 0;
     }
 }
